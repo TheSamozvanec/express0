@@ -1,0 +1,26 @@
+<div>
+    <h1>Редактирование записи</h1>
+    <div class="content">
+        <span>Для редактирования введите пароль пользователя с ID {{id}}</span>
+        <input class="inp-pass" type="password" placeholder="password">
+        <button class="submit-pass">Проверить</button>
+    </div>
+    <div class="content">
+        <p>
+            <span>ID: </span>
+            <span class="identifier">{{id}}</span>
+        </p>
+        <p>
+            <span>Логин</span>
+            <input class="login" type="text" disabled>
+        </p>
+        <p>
+            <span>Пароль</span>
+            <input class="password" type="text" disabled>
+        </p>
+        <a href="/page/">Вренуться</a>
+        <button class="update" disabled>Изменить</button>
+        <button class="delete" disabled>Удалить</button>
+    </div>
+    <p class="error"></p>
+</div>

@@ -1,0 +1,26 @@
+<h1>Это форма проверки сессии</h1>
+
+<div class="content">
+    <h2>Представьтесь!</h2>
+    <form id="form1" action="" method="post">
+        <input type="text" name="name" placeholder="имя">
+        <input type="text" name="surname" placeholder="фамилия">
+        <input type="submit">
+    </form>
+</div>
+<p>За последний час заходили</p>
+<div class="content">
+    <table border="1" width="400">
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+        </tr>
+        {{#each guests}}
+        <tr> 
+            <td>{{name}}</td>
+            <td>{{surname}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    <p class="test"></p>
+</div>
